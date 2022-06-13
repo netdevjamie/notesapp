@@ -1,6 +1,8 @@
 # notesapp
 Notes app for coding challenge utilizing React and WebApi
 
+Installation Instructions: Clone this repository, open solution with Visual Studio 2019 on Mac or Windows and run.
+
 Build a Notes App
 Acceptance Criteria:
 There should be a list of all notes.
