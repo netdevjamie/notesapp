@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "eX4+Xh2Nj3bUBE0E226Cbv2sfRbKNX1ssMO/XSMTHQ4uFAXTHa/cw+rhyEixJ8UZ+lSIc8skWB3FZ3VaR1oxXA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jwm5909\\Desktop\\Notes\\Notes\\Notes.WebApi\\Notes.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adm5909\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\adm5909\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\adm5909\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
