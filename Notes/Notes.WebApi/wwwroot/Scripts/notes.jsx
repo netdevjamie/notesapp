@@ -136,8 +136,10 @@
                                 </a>
                             </div>
                             <div className="col-md-3">
-                                <button className="btn btn-primary btn-sm" onClick={_ => this.handleNoteEdit(note)} >Edit</ button>
-                                <button className="btn btn-danger btn-sm" onClick={_ => this.handleNoteDelete(note)} >Delete</ button>
+                                <div class="btn-group" role="group">
+                                    <button className="btn btn-primary btn-sm" onClick={_ => this.handleNoteEdit(note)} >Edit</ button>
+                                    <button className="btn btn-danger btn-sm" onClick={_ => this.handleNoteDelete(note)} >Delete</ button>
+                                </div>
                             </div>
                         </div>
                     )}
