@@ -8,17 +8,17 @@
 
   componentDidMount() {
     fetch("/api/note")
-      .then(res => res.json())
+        .then(res => {
+            //throw "hello world";
+            return res.json();
+        })
       .then(
-        (result) => {
+          (result) => {
           this.setState({
             isLoaded: true,
             notes: result
           });
         },
-        // Note: it's important to handle errors here
-        // instead of a catch() block so that we don't swallow
-        // exceptions from actual bugs in components.
         (error) => {
           this.setState({
             isLoaded: true,
@@ -107,17 +107,23 @@
           <div className="col-md-3">
             <button className="btn btn-success btn-sm" onClick={_ => this.handleSaveNote()} >Save</ button>
           </div>
-        </div>
+            </div>
+
+            <div className="row text-danger">
+                {this.state.error}
+            </div>
 
         <div>
           {this.state.notes.map((note, index) =>
             <div key={index} className="row">
-              <div className="col-md-3">
-                {note.NoteText}
+                  <div className="col-md-3">
+                      <a href={"/api/note/" + note.Id}>
+                        {note.NoteText}
+                      </a>
               </div>
               <div className="col-md-3">
                 <button className="btn btn-primary btn-sm" onClick={_ => this.handleNoteEdit(note)} >Edit</ button>
-                <button className="btn btn-secondary btn-sm" onClick={_ => this.handleNoteDelete(note)} >Delete</ button>
+                <button className="btn btn-danger btn-sm" onClick={_ => this.handleNoteDelete(note)} >Delete</ button>
               </div>
             </div>
           )}
