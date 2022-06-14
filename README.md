@@ -3,7 +3,7 @@ Notes app for coding challenge utilizing React and WebApi
 
 __Installation Instructions__ : Clone this repository, open solution with Visual Studio 2019 on Mac or Windows and run. 
 
-** note... to navigate to specific note use a url like so to access the first note: https://localhost:<portNumber>/api/note/1
+** note... to navigate to specific note use a url like so to access the first note: (localhost:portNumber/api/note/1)
 
 __Build a Notes App__
 __Acceptance Criteria__:
